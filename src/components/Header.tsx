@@ -72,7 +72,7 @@ export function Header() {
             </div>
             
             <div className="flex items-center gap-4">
-              <ThemeToggle />
+              {/* <ThemeToggle /> */}
               <Button 
                 variant="outline"
                 className="glass-card border-border/50 hover:bg-accent/5 font-medium"
