@@ -44,7 +44,7 @@ export function Header() {
             {/* Premium Badge */}
             <Badge className="hidden sm:flex glass-card text-xs px-3 py-1 border-0 text-brand-accent bg-brand-accent/10">
               <Star className="w-3 h-3 mr-1 fill-current" />
-              Premiado 2025
+              Premium
             </Badge>
           </div>
 

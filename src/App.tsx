@@ -118,7 +118,7 @@ export default function App() {
 
                 <div className="flex items-center gap-4">
                   <Badge className="glass-card text-xs px-3 py-1 border-0 text-brand-accent bg-brand-accent/10">
-                    Premiado 2025
+                    Premium
                   </Badge>
                   <div className="flex items-center gap-1 text-brand-gold">
                     {[1, 2, 3, 4, 5].map((i) => (
