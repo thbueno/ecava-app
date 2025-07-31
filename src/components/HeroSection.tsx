@@ -24,22 +24,23 @@ export function HeroSection() {
             <div className="flex items-center gap-4 animate-fade-in">
               <Badge className="glass-card text-sm px-4 py-2 border-0 text-brand-primary bg-brand-primary/10">
                 <Star className="w-4 h-4 mr-2 fill-current" />
-                V.7 • Premiado como Melhor App 2024
+                V.7 • Destaque Casa Cor 2025
               </Badge>
             </div>
 
             {/* Main Heading */}
             <div className="space-y-6 animate-slide-up">
               <div className="space-y-3">
-                <h1 className="text-7xl lg:text-8xl font-black leading-none">
-                  ECAVA
-                </h1>
-                <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4">
                   <div className="h-px bg-gradient-to-r from-brand-primary to-brand-accent flex-1 max-w-24" />
-                  <span className="text-xl font-light text-muted-foreground tracking-widest">
-                    LACAVA
+                  <span className="text-2xl font-light text-muted-foreground tracking-widest">
+                    SUA ADEGA
                   </span>
                 </div>
+                <h1 className="text-6xl lg:text-8xl font-black leading-none">
+                  Inteligente
+                </h1>
+                
               </div>
               
               <p className="text-2xl font-light text-muted-foreground max-w-2xl leading-relaxed">
@@ -71,7 +72,7 @@ export function HeroSection() {
             </div>
 
             {/* Social Proof */}
-            <div className="flex items-center gap-8 pt-8 animate-fade-in delay-300">
+            {/* <div className="flex items-center gap-8 pt-8 animate-fade-in delay-300">
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
                   {[1, 2, 3].map((i) => (
@@ -94,7 +95,7 @@ export function HeroSection() {
                 </div>
                 <span className="text-sm text-muted-foreground">4.9 (2,341 avaliações)</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Content - 5 columns */}
