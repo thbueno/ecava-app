@@ -64,7 +64,6 @@ export function AboutSection() {
                   <span className="text-gradient">
                     onde estiver
                   </span>
-                  .
                 </h2>
 
                 <div className="space-y-6 text-lg leading-relaxed">
