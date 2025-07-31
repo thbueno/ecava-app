@@ -276,7 +276,7 @@ export function FeaturesSection() {
         </div>
 
         {/* Bottom CTA Section */}
-        <div className="text-center mt-20 pt-20 border-t border-border/50">
+        {/* <div className="text-center mt-20 pt-20 border-t border-border/50">
           <div className="max-w-2xl mx-auto space-y-6">
             <h3 className="text-3xl font-bold">
               Pronto para transformar sua{' '}
@@ -294,7 +294,7 @@ export function FeaturesSection() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )
