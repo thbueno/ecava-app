@@ -1,8 +1,8 @@
 import { Button } from './ui/button'
 import { Badge } from './ui/badge'
 import { Card } from './ui/card'
-import { Download, Play, ArrowRight, Star, Users, Zap, Shield } from 'lucide-react'
-import exampleImage from 'figma:asset/c8599312efc08b377cb7f805e7a37dc2a5316f8c.png';
+import { Download, Play, ArrowRight, Star, Zap, Shield } from 'lucide-react'
+
 
 export function HeroSection() {
   return (
