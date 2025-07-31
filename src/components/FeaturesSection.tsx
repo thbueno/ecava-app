@@ -12,7 +12,6 @@ import {
   BarChart3,
   Zap,
   Brain,
-  Smartphone,
   Cloud,
   Lock
 } from 'lucide-react'
