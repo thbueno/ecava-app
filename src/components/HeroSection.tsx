@@ -108,7 +108,7 @@ export function HeroSection() {
                 <div className="flex-1" />
                 <div className="flex justify-center">
                   <img
-                    src="/src/assets/image_hand_data.png"
+                    src="/image_hand_data.png"
                     alt="Wine App Mockup"
                     className="max-w-full h-auto object-contain"
                   />
