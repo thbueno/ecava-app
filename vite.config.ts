@@ -47,5 +47,27 @@ function removeVersionSpecifiers() {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), removeVersionSpecifiers()],
+  css: {
+    postcss: {
+      plugins: []
+    }
+  },
+  build: {
+    // Ensure CSS is properly processed
+    cssCodeSplit: true,
+    // Don't minify CSS too aggressively to preserve backdrop-filter
+    cssMinify: 'lightningcss',
+    rollupOptions: {
+      output: {
+        // Ensure CSS is loaded before JS
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name?.endsWith('.css')) {
+            return 'assets/[name]-[hash][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
+        }
+      }
+    }
+  }
 })
 

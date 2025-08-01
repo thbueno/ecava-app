@@ -1,51 +1,50 @@
-@custom-variant dark (&:is(.dark *));
-
 :root {
   /* Base Configuration */
   --font-size: 14px;
-  
+
   /* Wine Brand Color Palette - Enhanced */
-  --brand-primary: #8B2870; /* Deep wine purple from logo */
-  --brand-secondary: #A642B5; /* Lighter purple variant */
-  --brand-accent: #D946EF; /* Bright magenta accent */
-  --brand-gold: #D4AF37; /* Luxury gold accent */
-  --brand-wood: #8B4513; /* Wine cellar wood tone */
-  --brand-rose: #F472B6; /* Soft rose accent */
-  --brand-cream: #FEF7F0; /* Warm cream background */
-  
+  --brand-primary: #8b2870; /* Deep wine purple from logo */
+  --brand-secondary: #a642b5; /* Lighter purple variant */
+  --brand-accent: #d946ef; /* Bright magenta accent */
+  --brand-gold: #d4af37; /* Luxury gold accent */
+  --brand-wood: #8b4513; /* Wine cellar wood tone */
+  --brand-rose: #f472b6; /* Soft rose accent */
+  --brand-cream: #fef7f0; /* Warm cream background */
+
   /* Semantic Colors - Light Theme */
-  --background: #FDFCFB;
-  --foreground: #0F0F0F;
-  --card: #FFFFFF;
-  --card-foreground: #0F0F0F;
-  --popover: #FFFFFF;
-  --popover-foreground: #0F0F0F;
+  --background: #fdfcfb;
+  --foreground: #0f0f0f;
+  --card: #ffffff;
+  --card-foreground: #0f0f0f;
+  --popover: #ffffff;
+  --popover-foreground: #0f0f0f;
   --primary: var(--brand-primary);
-  --primary-foreground: #FFFFFF;
-  --secondary: #F8F4F0;
+  --primary-foreground: #ffffff;
+  --secondary: #f8f4f0;
   --secondary-foreground: var(--brand-primary);
-  --muted: #F5F5F4;
-  --muted-foreground: #64748B;
+  --muted: #f5f5f4;
+  --muted-foreground: #64748b;
   --accent: var(--brand-accent);
-  --accent-foreground: #FFFFFF;
-  --destructive: #DC2626;
-  --destructive-foreground: #FFFFFF;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
   --border: rgba(139, 40, 112, 0.08);
   --input: transparent;
-  --input-background: #F9FAFB;
-  --switch-background: #E5E7EB;
+  --input-background: #f9fafb;
+  --switch-background: #e5e7eb;
   --ring: var(--brand-primary);
-  
+
   /* Typography Variables */
-  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-family-display: 'Inter', sans-serif;
+  --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-family-display: "Inter", sans-serif;
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-black: 900;
-  
+
   /* Enhanced Text Sizes */
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -59,7 +58,7 @@
   --text-6xl: 3.75rem;
   --text-7xl: 4.5rem;
   --text-8xl: 6rem;
-  
+
   /* Advanced Spacing System */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -71,14 +70,14 @@
   --spacing-4xl: 6rem;
   --spacing-5xl: 8rem;
   --spacing-6xl: 12rem;
-  
+
   /* Component Spacing */
   --gap-section: var(--spacing-6xl);
   --gap-content: var(--spacing-4xl);
   --gap-elements: var(--spacing-2xl);
   --gap-text: var(--spacing-md);
   --gap-micro: var(--spacing-sm);
-  
+
   /* Advanced Border Radius */
   --radius-xs: 0.125rem;
   --radius-sm: 0.25rem;
@@ -89,33 +88,60 @@
   --radius-3xl: 1.5rem;
   --radius-4xl: 2rem;
   --radius: var(--radius-lg);
-  
+
   /* Sophisticated Shadows */
   --shadow-xs: 0 1px 2px 0 rgba(139, 40, 112, 0.02);
-  --shadow-sm: 0 1px 3px 0 rgba(139, 40, 112, 0.04), 0 1px 2px -1px rgba(139, 40, 112, 0.04);
-  --shadow-md: 0 4px 6px -1px rgba(139, 40, 112, 0.06), 0 2px 4px -2px rgba(139, 40, 112, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(139, 40, 112, 0.08), 0 4px 6px -4px rgba(139, 40, 112, 0.08);
-  --shadow-xl: 0 20px 25px -5px rgba(139, 40, 112, 0.1), 0 8px 10px -6px rgba(139, 40, 112, 0.1);
+  --shadow-sm: 0 1px 3px 0 rgba(139, 40, 112, 0.04),
+    0 1px 2px -1px rgba(139, 40, 112, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(139, 40, 112, 0.06),
+    0 2px 4px -2px rgba(139, 40, 112, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(139, 40, 112, 0.08),
+    0 4px 6px -4px rgba(139, 40, 112, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(139, 40, 112, 0.1),
+    0 8px 10px -6px rgba(139, 40, 112, 0.1);
   --shadow-2xl: 0 25px 50px -12px rgba(139, 40, 112, 0.15);
   --shadow-3xl: 0 35px 60px -12px rgba(139, 40, 112, 0.2);
-  
+
   /* Glass Morphism */
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-shadow: 0 8px 32px rgba(139, 40, 112, 0.12);
-  
+
   /* Advanced Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 50%, var(--brand-accent) 100%);
-  --gradient-subtle: linear-gradient(135deg, rgba(139, 40, 112, 0.05) 0%, rgba(212, 70, 239, 0.05) 100%);
-  --gradient-mesh: radial-gradient(circle at 20% 50%, rgba(139, 40, 112, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(212, 70, 239, 0.3) 0%, transparent 50%), radial-gradient(circle at 40% 80%, rgba(166, 66, 181, 0.2) 0%, transparent 50%);
-  
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--brand-primary) 0%,
+    var(--brand-secondary) 50%,
+    var(--brand-accent) 100%
+  );
+  --gradient-subtle: linear-gradient(
+    135deg,
+    rgba(139, 40, 112, 0.05) 0%,
+    rgba(212, 70, 239, 0.05) 100%
+  );
+  --gradient-mesh: radial-gradient(
+      circle at 20% 50%,
+      rgba(139, 40, 112, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(212, 70, 239, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 80%,
+      rgba(166, 66, 181, 0.2) 0%,
+      transparent 50%
+    );
+
   /* Chart Colors */
   --chart-1: var(--brand-primary);
   --chart-2: var(--brand-secondary);
   --chart-3: var(--brand-accent);
   --chart-4: var(--brand-gold);
   --chart-5: var(--brand-wood);
-  
+
   /* Animation Variables */
   --animation-fast: 150ms;
   --animation-normal: 250ms;
@@ -127,37 +153,40 @@
 
 .dark {
   /* Dark Theme Semantic Colors */
-  --background: #0A0A0A;
-  --foreground: #FAFAFA;
+  --background: #0a0a0a;
+  --foreground: #fafafa;
   --card: #131313;
-  --card-foreground: #FAFAFA;
+  --card-foreground: #fafafa;
   --popover: #131313;
-  --popover-foreground: #FAFAFA;
+  --popover-foreground: #fafafa;
   --primary: var(--brand-accent);
-  --primary-foreground: #0A0A0A;
-  --secondary: #1F1F1F;
-  --secondary-foreground: #FAFAFA;
-  --muted: #1F1F1F;
-  --muted-foreground: #94A3B8;
+  --primary-foreground: #0a0a0a;
+  --secondary: #1f1f1f;
+  --secondary-foreground: #fafafa;
+  --muted: #1f1f1f;
+  --muted-foreground: #94a3b8;
   --accent: var(--brand-accent);
-  --accent-foreground: #0A0A0A;
-  --destructive: #EF4444;
-  --destructive-foreground: #FFFFFF;
+  --accent-foreground: #0a0a0a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
   --border: rgba(212, 70, 239, 0.15);
-  --input: #1F1F1F;
-  --input-background: #1F1F1F;
+  --input: #1f1f1f;
+  --input-background: #1f1f1f;
   --switch-background: #374151;
   --ring: var(--brand-accent);
-  
+
   /* Dark Theme Shadows */
   --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px -1px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4),
+    0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5),
+    0 8px 10px -6px rgba(0, 0, 0, 0.5);
   --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   --shadow-3xl: 0 35px 60px -12px rgba(0, 0, 0, 0.7);
-  
+
   /* Dark Glass Morphism */
   --glass-bg: rgba(0, 0, 0, 0.1);
   --glass-border: rgba(255, 255, 255, 0.05);
@@ -187,7 +216,7 @@
   --color-input-background: var(--input-background);
   --color-switch-background: var(--switch-background);
   --color-ring: var(--ring);
-  
+
   /* Brand Colors */
   --color-brand-primary: var(--brand-primary);
   --color-brand-secondary: var(--brand-secondary);
@@ -206,12 +235,16 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-family-sans);
-    font-feature-settings: 'rlig' 1, 'calt' 1;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
-  
+
   /* Smooth transitions for all elements */
-  *, *::before, *::after {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  *,
+  *::before,
+  *::after {
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, backdrop-filter;
     transition-duration: var(--animation-normal);
     transition-timing-function: var(--ease-out);
   }
@@ -306,169 +339,228 @@ html {
   .section-gap {
     gap: var(--gap-section);
   }
-  
+
   .content-gap {
     gap: var(--gap-content);
   }
-  
+
   .element-gap {
     gap: var(--gap-elements);
   }
-  
+
   .text-gap {
     gap: var(--gap-text);
   }
-  
+
   .micro-gap {
     gap: var(--gap-micro);
   }
-  
-  /* Sophisticated glass morphism with fallbacks */
+
+  /* Production-ready glass morphism with comprehensive fallbacks */
   .glass-card {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    /* Base fallback background - always present */
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(139, 40, 112, 0.1);
     box-shadow: var(--glass-shadow);
+
+    /* Progressive enhancement with backdrop-filter */
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
   }
-  
+
+  /* Enhanced backdrop support detection */
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .glass-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+    }
+  }
+
   /* Mobile optimized glass effect */
   .glass-card-mobile {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    /* Base fallback */
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(139, 40, 112, 0.1);
     box-shadow: var(--shadow-lg);
+
+    /* Enhanced with backdrop-filter */
     backdrop-filter: blur(6px) saturate(150%);
     -webkit-backdrop-filter: blur(6px) saturate(150%);
   }
-  
-  /* Fallback for browsers without backdrop-filter support */
-  .glass-card-fallback {
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(139, 40, 112, 0.1);
-    box-shadow: var(--shadow-lg);
+
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .glass-card-mobile {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+    }
   }
-  
-  /* Dark mode fallback */
-  .dark .glass-card-fallback {
-    background: rgba(19, 19, 19, 0.95);
+
+  /* Explicit fallback class */
+  .glass-card-fallback {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 1px solid rgba(139, 40, 112, 0.1) !important;
+    box-shadow: var(--shadow-lg) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* Dark mode support for all variants */
+  .dark .glass-card {
+    background: rgba(19, 19, 19, 0.85);
     border: 1px solid rgba(212, 70, 239, 0.15);
   }
-  
-  /* Blur intensity variations */
-  .blur-light {
-    backdrop-filter: blur(8px) saturate(120%);
-    -webkit-backdrop-filter: blur(8px) saturate(120%);
-  }
-  
-  .blur-medium {
-    backdrop-filter: blur(16px) saturate(150%);
-    -webkit-backdrop-filter: blur(16px) saturate(150%);
-  }
-  
-  .blur-heavy {
-    backdrop-filter: blur(24px) saturate(200%);
-    -webkit-backdrop-filter: blur(24px) saturate(200%);
-  }
-  
-  /* CSS feature detection fallbacks */
-  @supports not (backdrop-filter: blur(1px)) and not (-webkit-backdrop-filter: blur(1px)) {
-    .glass-card,
-    .glass-card-mobile {
-      background: rgba(255, 255, 255, 0.95);
-      border: 1px solid rgba(139, 40, 112, 0.1);
+
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .dark .glass-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
     }
-    
-    .dark .glass-card,
+  }
+
+  .dark .glass-card-mobile {
+    background: rgba(19, 19, 19, 0.9);
+    border: 1px solid rgba(212, 70, 239, 0.15);
+  }
+
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
     .dark .glass-card-mobile {
-      background: rgba(19, 19, 19, 0.95);
-      border: 1px solid rgba(212, 70, 239, 0.15);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
     }
   }
-  
+
+  .dark .glass-card-fallback {
+    background: rgba(19, 19, 19, 0.95) !important;
+    border: 1px solid rgba(212, 70, 239, 0.15) !important;
+  }
+
+  /* Blur intensity variations - only apply if backdrop-filter is supported */
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .blur-light {
+      backdrop-filter: blur(8px) saturate(120%);
+      -webkit-backdrop-filter: blur(8px) saturate(120%);
+    }
+
+    .blur-medium {
+      backdrop-filter: blur(16px) saturate(150%);
+      -webkit-backdrop-filter: blur(16px) saturate(150%);
+    }
+
+    .blur-heavy {
+      backdrop-filter: blur(24px) saturate(200%);
+      -webkit-backdrop-filter: blur(24px) saturate(200%);
+    }
+  }
+
   /* Reduced motion preference support */
   @media (prefers-reduced-motion: reduce) {
     .glass-card,
     .glass-card-mobile {
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      background: rgba(255, 255, 255, 0.95) !important;
     }
-    
+
     .dark .glass-card,
     .dark .glass-card-mobile {
-      background: rgba(19, 19, 19, 0.95);
+      background: rgba(19, 19, 19, 0.95) !important;
     }
   }
-  
+
+  /* Tailwind backdrop utilities fallback enhancement */
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Fallback for Tailwind backdrop utilities */
+  @supports not (backdrop-filter: blur(1px)) {
+    .backdrop-blur-sm,
+    .backdrop-blur-md {
+      background: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .dark .backdrop-blur-sm,
+    .dark .backdrop-blur-md {
+      background: rgba(19, 19, 19, 0.8) !important;
+    }
+  }
+
   /* Advanced gradients */
   .gradient-primary {
     background: var(--gradient-primary);
   }
-  
+
   .gradient-subtle {
     background: var(--gradient-subtle);
   }
-  
+
   .gradient-mesh {
     background: var(--gradient-mesh);
   }
-  
+
   .text-gradient {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
-  
+
   /* Sophisticated shadows */
   .shadow-soft {
     box-shadow: var(--shadow-lg);
   }
-  
+
   .shadow-elegant {
     box-shadow: var(--shadow-2xl);
   }
-  
+
   .shadow-dramatic {
     box-shadow: var(--shadow-3xl);
   }
-  
+
   /* Animation utilities */
   .animate-fade-in {
     animation: fadeIn var(--animation-slow) var(--ease-out);
   }
-  
+
   .animate-slide-up {
     animation: slideUp var(--animation-slow) var(--ease-out);
   }
-  
+
   .animate-bounce-in {
     animation: bounceIn var(--animation-slow) var(--bounce);
   }
-  
+
   /* Hover effects */
   .hover-lift {
-    transition: transform var(--animation-normal) var(--ease-out), box-shadow var(--animation-normal) var(--ease-out);
+    transition: transform var(--animation-normal) var(--ease-out),
+      box-shadow var(--animation-normal) var(--ease-out);
   }
-  
+
   .hover-lift:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-elegant);
   }
-  
+
   /* Layout utilities */
   .container-fluid {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
-  
+
   @media (min-width: 768px) {
     .container-fluid {
       padding: 0 2rem;
     }
   }
-  
+
   @media (min-width: 1024px) {
     .container-fluid {
       padding: 0 3rem;

@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
 import { FeaturesSection } from "./components/FeaturesSection";
+import { DeploymentDebug } from "./components/DeploymentDebug";
 import { Card } from "./components/ui/card";
 import { Badge } from "./components/ui/badge";
 import { Button } from "./components/ui/button";
@@ -246,6 +247,9 @@ export default function App() {
             </div>
           </div>
         </footer>
+        
+        {/* Debug component for deployment troubleshooting */}
+        <DeploymentDebug />
       </div>
     </ThemeProvider>
   );
